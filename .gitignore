@@ -1,0 +1,14 @@
+# Exports grandes
+exports/*.vmdk
+exports/*.qcow2
+exports/*.ova
+
+# Credenciais
+config/*-secrets.json
+*.pem
+*.key
+
+# Temporários
+*.log
+.DS_Store
+.vscode/settings.json
