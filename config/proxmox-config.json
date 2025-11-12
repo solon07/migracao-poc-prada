@@ -1,0 +1,35 @@
+{
+  "vm": {
+    "vmid": 103,
+    "name": "poc-prada",
+    "node": "sp1-sd-gt4w-1",
+    "ostype": "l26",
+    "description": "Migrado de AWS EC2 i-06dffc5a34a6c60fbe em 12/11/2025"
+  },
+  "resources": {
+    "cores": 4,
+    "memory": 16384,
+    "storage": "NVME",
+    "disk_size": "300G"
+  },
+  "network": {
+    "bridge": "vmbr0",
+    "model": "virtio",
+    "firewall": 1,
+    "ip_config": {
+      "type": "static",
+      "ip": "192.168.100.XXX",
+      "gateway": "192.168.100.1",
+      "netmask": "255.255.255.0",
+      "dns": ["187.108.193.3", "187.108.193.4"]
+    }
+  },
+  "boot": {
+    "order": "scsi0",
+    "bios": "seabios"
+  },
+  "features": {
+    "qemu_agent": true,
+    "onboot": true
+  }
+}

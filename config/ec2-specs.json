@@ -1,0 +1,43 @@
+{
+  "instance": {
+    "id": "i-06dffc5a34a6c60fbe",
+    "name": "poc_prada",
+    "type": "t3.xlarge",
+    "vcpus": 4,
+    "ram_gb": 16,
+    "state": "stopped",
+    "launch_date": "2025-07-28T09:44:38-03:00"
+  },
+  "ami": {
+    "id": "ami-084568d8b438326d4d",
+    "name": "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250305",
+    "os": "Ubuntu 24.04 LTS Noble",
+    "architecture": "x86_64"
+  },
+  "storage": {
+    "root_device": "/dev/sda1",
+    "volume_id": "vol-0d784751235375b31",
+    "size_gb": 300,
+    "type": "gp3",
+    "iops": null,
+    "throughput": null
+  },
+  "network": {
+    "vpc_id": "vpc-db3605a1",
+    "subnet_id": "subnet-bb4cae9a",
+    "availability_zone": "us-east-1d",
+    "private_ip": "172.31.87.181",
+    "public_ip": "3.226.123.214",
+    "security_groups": [
+      {
+        "id": "sg-02844529da9ffa812",
+        "name": "poc-publicar-db"
+      }
+    ]
+  },
+  "tags": {
+    "Name": "poc_prada",
+    "Environment": "production",
+    "ManagedBy": "YOUX"
+  }
+}
