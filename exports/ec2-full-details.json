@@ -1,0 +1,167 @@
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-09866ef2b151c8f8a",
+            "OwnerId": "592309313728",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2025-04-16T17:25:22+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0d784751235375b31"
+                            }
+                        }
+                    ],
+                    "ClientToken": "d8d08e70-aa64-4fc7-9425-3f681be176c1",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "592309313728",
+                                "PublicDnsName": "ec2-3-226-123-214.compute-1.amazonaws.com",
+                                "PublicIp": "3.226.123.214"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2025-04-16T17:25:21+00:00",
+                                "AttachmentId": "eni-attach-035ded8e3d634dab8",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-02844529da9ffa812",
+                                    "GroupName": "poc-publicar-db"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "12:47:4e:c3:93:53",
+                            "NetworkInterfaceId": "eni-0be5073fb057ea16c",
+                            "OwnerId": "592309313728",
+                            "PrivateDnsName": "ip-172-31-87-181.ec2.internal",
+                            "PrivateIpAddress": "172.31.87.181",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "592309313728",
+                                        "PublicDnsName": "ec2-3-226-123-214.compute-1.amazonaws.com",
+                                        "PublicIp": "3.226.123.214"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-87-181.ec2.internal",
+                                    "PrivateIpAddress": "172.31.87.181"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-bb4cae9a",
+                            "VpcId": "vpc-db3605a1",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-02844529da9ffa812",
+                            "GroupName": "poc-publicar-db"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "poc-prada"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "BootMode": "uefi-preferred",
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2025-04-16T17:25:21+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "uefi",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-06dfc5a34a6c60fbe",
+                    "ImageId": "ami-084568db4383264d4",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "PrivateDnsName": "ip-172-31-87-181.ec2.internal",
+                    "PublicDnsName": "ec2-3-226-123-214.compute-1.amazonaws.com",
+                    "StateTransitionReason": "User initiated (2025-11-11 13:04:02 GMT)",
+                    "KeyName": "poc-prada",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t3.xlarge",
+                    "LaunchTime": "2025-07-28T12:44:38+00:00",
+                    "Placement": {
+                        "AvailabilityZoneId": "use1-az2",
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "us-east-1d"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-bb4cae9a",
+                    "VpcId": "vpc-db3605a1",
+                    "PrivateIpAddress": "172.31.87.181",
+                    "PublicIpAddress": "3.226.123.214"
+                }
+            ]
+        }
+    ]
+}

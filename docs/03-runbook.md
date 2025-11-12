@@ -15,7 +15,7 @@
 ```bash
 # Verificar EC2 stopped
 aws ec2 describe-instances \
-  --instance-ids i-06dffc5a34a6c60fbe \
+  --instance-ids i-06dfc5a34a6c60fbe \
   --query 'Reservations[0].Instances[0].State.Name' \
   --output text
 # Esperado: stopped
@@ -37,7 +37,7 @@ ssh root@192.168.100.10 "df -h /mnt/pve/NVME | tail -1"
 ```bash
 # Obter detalhes completos da instância
 aws ec2 describe-instances \
-  --instance-ids i-06dffc5a34a6c60fbe \
+  --instance-ids i-06dfc5a34a6c60fbe \
   --output json > exports/ec2-full-details.json
 
 # Backup security groups
@@ -359,7 +359,7 @@ rm -rf exports/temp/
 rm exports/poc-prada.qcow2
 
 # AWS - Terminar EC2 original
-aws ec2 terminate-instances --instance-ids i-06dffc5a34a6c60fbe
+aws ec2 terminate-instances --instance-ids i-06dfc5a34a6c60fbe
 ```
 
 ---

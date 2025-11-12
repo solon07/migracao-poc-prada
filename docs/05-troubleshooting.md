@@ -355,7 +355,7 @@ iptables -I INPUT -p tcp --dport 22 -j ACCEPT
 ```bash
 # CloudTrail (se habilitado)
 aws cloudtrail lookup-events \
-  --lookup-attributes AttributeKey=ResourceName,AttributeValue=i-06dffc5a34a6c60fbe \
+  --lookup-attributes AttributeKey=ResourceName,AttributeValue=i-06dfc5a34a6c60fbe \
   --max-results 50
 ```
 
@@ -392,14 +392,14 @@ sudo tail -f /var/log/syslog
 **Plano B**: Religar EC2 original
 ```bash
 # AWS - Restart EC2
-aws ec2 start-instances --instance-ids i-06dffc5a34a6c60fbe
+aws ec2 start-instances --instance-ids i-06dfc5a34a6c60fbe
 
 # Aguardar inicialização
-aws ec2 wait instance-running --instance-ids i-06dffc5a34a6c60fbe
+aws ec2 wait instance-running --instance-ids i-06dfc5a34a6c60fbe
 
 # Verificar IP público
 aws ec2 describe-instances \
-  --instance-ids i-06dffc5a34a6c60fbe \
+  --instance-ids i-06dfc5a34a6c60fbe \
   --query 'Reservations[0].Instances[0].PublicIpAddress' \
   --output text
 

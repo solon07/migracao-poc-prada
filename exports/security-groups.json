@@ -1,0 +1,184 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-02844529da9ffa812",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "poc-ora-db"
+                }
+            ],
+            "VpcId": "vpc-db3605a1",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:592309313728:security-group/sg-02844529da9ffa812",
+            "OwnerId": "592309313728",
+            "GroupName": "poc-publicar-db",
+            "Description": "poc-publicar-db",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 0,
+                    "ToPort": 65535,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "youx",
+                            "CidrIp": "177.44.44.3/32"
+                        },
+                        {
+                            "Description": "youx",
+                            "CidrIp": "179.108.220.226/32"
+                        },
+                        {
+                            "Description": "julio",
+                            "CidrIp": "187.60.142.10/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 5432,
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "177.44.44.3/32"
+                        },
+                        {
+                            "CidrIp": "179.108.220.226/32"
+                        },
+                        {
+                            "CidrIp": "172.31.15.165/32"
+                        },
+                        {
+                            "CidrIp": "189.89.221.16/32"
+                        },
+                        {
+                            "CidrIp": "187.60.133.11/32"
+                        },
+                        {
+                            "CidrIp": "172.31.65.122/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 8089,
+                    "ToPort": 8089,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 6333,
+                    "ToPort": 6333,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "179.108.220.226/32"
+                        },
+                        {
+                            "CidrIp": "189.89.221.16/32"
+                        },
+                        {
+                            "CidrIp": "177.44.44.3/32"
+                        },
+                        {
+                            "CidrIp": "187.60.133.11/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 8088,
+                    "ToPort": 8088,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 5433,
+                    "ToPort": 5433,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "denis",
+                            "CidrIp": "138.94.88.247/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

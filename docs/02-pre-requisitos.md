@@ -6,7 +6,7 @@
 - [ ] **EC2 poc_prada está stopped**
 ```bash
   aws ec2 describe-instances \
-    --instance-ids i-06dffc5a34a6c60fbe \
+    --instance-ids i-06dfc5a34a6c60fbe \
     --query 'Reservations[0].Instances[0].State.Name' \
     --output text
   # Esperado: stopped
@@ -104,7 +104,7 @@
 ```bash
 # 1. Confirmar EC2 stopped
 STATUS=$(aws ec2 describe-instances \
-  --instance-ids i-06dffc5a34a6c60fbe \
+  --instance-ids i-06dfc5a34a6c60fbe \
   --query 'Reservations[0].Instances[0].State.Name' \
   --output text)
 
@@ -247,7 +247,7 @@ fi
 
 # EC2 Status
 STATUS=$(aws ec2 describe-instances \
-  --instance-ids i-06dffc5a34a6c60fbe \
+  --instance-ids i-06dfc5a34a6c60fbe \
   --query 'Reservations[0].Instances[0].State.Name' \
   --output text 2>/dev/null || echo "error")
 

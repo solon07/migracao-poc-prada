@@ -1,6 +1,6 @@
 {
   "instance": {
-    "id": "i-06dffc5a34a6c60fbe",
+    "id": "i-06dfc5a34a6c60fbe",
     "name": "poc_prada",
     "type": "t3.xlarge",
     "vcpus": 4,

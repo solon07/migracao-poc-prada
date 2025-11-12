@@ -3,7 +3,7 @@
 ## 📊 Status: 🟡 Em Planejamento
 
 ### Objetivo
-Migrar instância EC2 `poc_prada` (i-06dffc5a34a6c60fbe) para VM no Proxmox VE node `sp1-sd-gt4w-1`.
+Migrar instância EC2 `poc_prada` (i-06dfc5a34a6c60fbe) para VM no Proxmox VE node `sp1-sd-gt4w-1`.
 
 ### Specs Origem (EC2)
 - **Tipo**: t3.xlarge (4 vCPUs, ~16GB RAM)
@@ -59,5 +59,5 @@ migracao-poc-prada/
 ## 🔗 Links Rápidos
 - [Runbook Completo](docs/03-runbook.md)
 - [Issue GitLab #1794](https://gitlab.com/youx-group/infraestrutura/documentacao-infra/-/issues/1794)
-- [AWS Console - poc_prada](https://console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=i-06dffc5a34a6c60fbe)
+- [AWS Console - poc_prada](https://console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=i-06dfc5a34a6c60fbe)
 - [Proxmox VE - sp1-sd-gt4w-1](https://192.168.100.10:8006)

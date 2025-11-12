@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-INSTANCE_ID="i-06dffc5a34a6c60fbe"
+INSTANCE_ID="i-06dfc5a34a6c60fbe"
 EXPORT_DIR="exports"
 
 echo "🔍 Coletando configurações EC2 $INSTANCE_ID..."

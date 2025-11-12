@@ -31,7 +31,7 @@ Documentação e execução da migração da instância EC2 `poc_prada` (AWS) pa
 ### EC2 Origem
 ```json
 {
-  "instance_id": "i-06dffc5a34a6c60fbe",
+  "instance_id": "i-06dfc5a34a6c60fbe",
   "name": "poc_prada",
   "type": "t3.xlarge",
   "vcpus": 4,
@@ -146,7 +146,7 @@ Documentação e execução da migração da instância EC2 `poc_prada` (AWS) pa
 
 - **Issue GitLab**: [#1794](https://gitlab.com/youx-group/infraestrutura/documentacao-infra/-/issues/1794)
 - **Runbook Completo**: `docs/03-runbook.md`
-- **AWS Console EC2**: [poc_prada](https://console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=i-06dffc5a34a6c60fbe)
+- **AWS Console EC2**: [poc_prada](https://console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=i-06dfc5a34a6c60fbe)
 - **Proxmox**: https://192.168.100.10:8006
 
 ---
@@ -184,7 +184,7 @@ Documentação e execução da migração da instância EC2 `poc_prada` (AWS) pa
 ### AWS CLI
 ```bash
 # Status EC2
-aws ec2 describe-instances --instance-ids i-06dffc5a34a6c60fbe \
+aws ec2 describe-instances --instance-ids i-06dfc5a34a6c60fbe \
   --query 'Reservations[0].Instances[0].State.Name' --output text
 
 # Listar exports ativos
